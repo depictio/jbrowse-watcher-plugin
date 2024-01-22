@@ -124,3 +124,7 @@ cypress/screenshots
 
 # Ignore code editor
 .vscode
+
+# DEV folder
+jbrowse2_bak/
+

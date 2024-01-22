@@ -29,7 +29,7 @@ export default function WatcherF(pluginManager: PluginManager) {
             selectedTracks
         };
 
-        fetch('http://localhost:8000/log', {
+        fetch('http://localhost:8058/depictio/api/v1/jbrowse/log', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
