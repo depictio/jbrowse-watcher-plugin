@@ -1,6 +1,8 @@
-# jbrowse-plugin-template
+# jbrowse-watcher-plugin
 
-> Template to quickly start a new JBrowse plugin
+
+# TO COMPLETE
+
 
 ## Usage
 

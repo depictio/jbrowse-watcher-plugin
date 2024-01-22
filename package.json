@@ -1,6 +1,6 @@
 {
   "version": "0.0.1",
-  "name": "jbrowse-plugin-template",
+  "name": "jbrowse-watcher-plugin",
   "keywords": [
     "jbrowse",
     "jbrowse2"
@@ -13,9 +13,9 @@
     "src"
   ],
   "config": {
-    "port": 9000,
+    "port": 9010,
     "browse": {
-      "port": 8999
+      "port": 9011
     },
     "jbrowse": {
       "plugin": {
@@ -116,5 +116,16 @@
     "tss-react": "^4.8.6",
     "typescript": "^5.1.6"
   },
-  "private": true
+  "private": true,
+  "description": "You can use this template to create a new GitHub repository or a new local\r project.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weber8thomas/jbrowse-watcher-plugin.git"
+  },
+  "author": "Thomas Weber",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/weber8thomas/jbrowse-watcher-plugin/issues"
+  },
+  "homepage": "https://github.com/weber8thomas/jbrowse-watcher-plugin#readme"
 }
