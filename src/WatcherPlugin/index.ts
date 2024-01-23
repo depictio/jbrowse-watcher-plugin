@@ -31,8 +31,8 @@ export default function WatcherF(pluginManager: PluginManager) {
             selectedTracks
         };
 
-        fetch('http://host.docker.internal:8058/depictio/api/v1/jbrowse/log', {
-        // fetch('http://localhost:8058/depictio/api/v1/jbrowse/log', {
+        // fetch('http://host.docker.internal:8058/depictio/api/v1/jbrowse/log', {
+        fetch('http://localhost:8058/depictio/api/v1/jbrowse/log', {
         // fetch('http://localhost:8000/log', {
             method: 'POST',
             headers: {
