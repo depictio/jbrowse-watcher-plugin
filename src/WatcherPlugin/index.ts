@@ -17,7 +17,9 @@ function debounce(func, wait) {
 }
 
 export default function WatcherF(pluginManager: PluginManager) {
+    console.log('Installing WatcherPlugin inside WatcherF');
     const { autorun } = pluginManager.jbrequire('mobx');
+    console.log('autorun:', autorun);
 
 
     const sendData = (assemblyNames, coarseDynamicBlocks, selectedTracks) => {
@@ -30,6 +32,8 @@ export default function WatcherF(pluginManager: PluginManager) {
         };
 
         fetch('http://host.docker.internal:8058/depictio/api/v1/jbrowse/log', {
+        // fetch('http://localhost:8058/depictio/api/v1/jbrowse/log', {
+        // fetch('http://localhost:8000/log', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

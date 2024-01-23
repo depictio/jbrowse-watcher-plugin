@@ -79,7 +79,7 @@ async function updateJBrowseConfig(packageName: string, pluginName: string) {
     path.join(__dirname, '..', 'jbrowse_config.json'),
   )
   jbrowseConfig.plugins[0].name = pluginName
-  jbrowseConfig.plugins[0].url = `http://localhost:9000/dist/${packageName}.umd.development.js`
+  jbrowseConfig.plugins[0].url = `http://localhost:9010/dist/${packageName}.umd.development.js`
   writeJSON('jbrowse_config.json', jbrowseConfig)
 }
 
@@ -94,7 +94,7 @@ async function updateExampleFixture(packageName: string, pluginName: string) {
   )
   const exampleFixture = await readJSON(fixtureLocation)
   exampleFixture.plugins[0].name = pluginName
-  exampleFixture.plugins[0].url = `http://localhost:9000/dist/${packageName}.umd.development.js`
+  exampleFixture.plugins[0].url = `http://localhost:9010/dist/${packageName}.umd.development.js`
   writeJSON(fixtureLocation, exampleFixture)
 }
 
