@@ -1,21 +1,5 @@
 // src/WatcherPlugin/index.ts
 import PluginManager from '@jbrowse/core/PluginManager';
-import fs from 'fs';
-import yaml from 'js-yaml';
-
-// Load YAML config file
-const configPath = './config.yaml';
-const configFile = fs.readFileSync(configPath, 'utf8');
-const config = yaml.load(configFile) as any;
-
-// Access server details
-const { hostname, port } = config.server;
-
-// Replace 'http://localhost:8058' with your configurable hostname and port
-const serverUrl = `http://${hostname}:${port}/depictio/api/v1/jbrowse/log`;
-
-// print in JS
-console.log('Server URL:', serverUrl);
 
 
 function debounce(func, wait) {
@@ -47,8 +31,7 @@ export default function WatcherF(pluginManager: PluginManager) {
             selectedTracks
         };
 
-
-        fetch(serverUrl, {
+        fetch('http://localhost:8058/depictio/api/v1/jbrowse/log', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
