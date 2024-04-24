@@ -123,12 +123,12 @@
   "description": "You can use this template to create a new GitHub repository or a new local\r project.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/weber8thomas/jbrowse-watcher-plugin.git"
+    "url": "git+https://github.com/depictio/jbrowse-watcher-plugin.git"
   },
   "author": "Thomas Weber",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/weber8thomas/jbrowse-watcher-plugin/issues"
+    "url": "https://github.com/depictio/jbrowse-watcher-plugin/issues"
   },
-  "homepage": "https://github.com/weber8thomas/jbrowse-watcher-plugin#readme"
+  "homepage": "https://github.com/depictio/jbrowse-watcher-plugin#readme"
 }
